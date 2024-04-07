@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         CardView()
-            .padding(.horizontal, 30)
-            .frame(height: 560)
+            .padding(.horizontal, 20)
+            .padding(.vertical, 60)
     }
 }
 
