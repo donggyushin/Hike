@@ -10,6 +10,7 @@
 		701091EF2BC2B57F0005F6F0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701091EE2BC2B57F0005F6F0 /* CardView.swift */; };
 		701091F12BC2B6710005F6F0 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701091F02BC2B6710005F6F0 /* CustomBackgroundView.swift */; };
 		701091F72BC2BD440005F6F0 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701091F62BC2BD440005F6F0 /* CustomButtonView.swift */; };
+		701091F92BC2C18F0005F6F0 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701091F82BC2C18F0005F6F0 /* GradientButtonStyle.swift */; };
 		70EB79EA2BC0FCB7001EB57A /* HikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EB79E92BC0FCB7001EB57A /* HikeApp.swift */; };
 		70EB79EC2BC0FCB7001EB57A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EB79EB2BC0FCB7001EB57A /* ContentView.swift */; };
 		70EB79EE2BC0FCB8001EB57A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70EB79ED2BC0FCB8001EB57A /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		701091EE2BC2B57F0005F6F0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		701091F02BC2B6710005F6F0 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
 		701091F62BC2BD440005F6F0 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		701091F82BC2C18F0005F6F0 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 		70EB79E62BC0FCB7001EB57A /* Hike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EB79E92BC0FCB7001EB57A /* HikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeApp.swift; sourceTree = "<group>"; };
 		70EB79EB2BC0FCB7001EB57A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		701091F22BC2B89D0005F6F0 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				701091F82BC2C18F0005F6F0 /* GradientButtonStyle.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				701091F72BC2BD440005F6F0 /* CustomButtonView.swift in Sources */,
 				70EB79EC2BC0FCB7001EB57A /* ContentView.swift in Sources */,
 				701091EF2BC2B57F0005F6F0 /* CardView.swift in Sources */,
+				701091F92BC2C18F0005F6F0 /* GradientButtonStyle.swift in Sources */,
 				70EB79EA2BC0FCB7001EB57A /* HikeApp.swift in Sources */,
 				701091F12BC2B6710005F6F0 /* CustomBackgroundView.swift in Sources */,
 			);

@@ -8,6 +8,20 @@
 import SwiftUI
 
 struct CardView: View {
+    
+    @State private var imageNumber: Int = 1
+    
+    func randomImage() {
+        var randomNumber = Int.random(in: 1...5)
+        
+        // TODO: What's difference between repeat, while?
+        repeat {
+            randomNumber = Int.random(in: 1...5)
+        } while randomNumber == imageNumber
+        
+        imageNumber = randomNumber
+    }
+    
     var body: some View {
         ZStack {
             CustomBackgroundView()
@@ -41,7 +55,6 @@ struct CardView: View {
                 }
                 .padding(.horizontal, 30)
                 
-                
                 // MARK: Main
                 ZStack {
                     Circle()
@@ -56,12 +69,28 @@ struct CardView: View {
                         )
                         .frame(width: 256, height: 256)
                     
-                    Image("image-1")
+                    Image("image-\(imageNumber)")
                         .resizable()
                         .scaledToFit()
+                        .animation(.default, value: imageNumber)
                 }
                 
                 // MARK: Footer
+                Button {
+                    // ACTION: Generate a random number
+                    randomImage()
+                } label: {
+                    Text("Explore More")
+                        .font(.title)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(
+                            LinearGradient(colors: [.colorGreenLight, .colorGreenMedium],
+                                           startPoint: .top,
+                                           endPoint: .bottom)
+                        )
+                        .shadow(color: .black, radius: 0.25)
+                }
+                .buttonStyle(GradientButtonStyle())
             }
         }
     }
