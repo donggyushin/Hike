@@ -28,7 +28,6 @@ struct MotionAnimationView: View {
                         withAnimation(
                             .interpolatingSpring(stiffness: 0.25, damping: 0.25)
                             .speed(Double.random(in: 0.5...1))
-                            .delay(.random(in: 0...3))
                             .repeatForever()
                         ) {
                             isAnimating = true
