@@ -8,6 +8,17 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    // MARK: - Properties
+    private let alternateAppIcons: [String] = [
+        "AppIcon-Backpack",
+        "AppIcon-Camera",
+        "AppIcon-Campfire",
+        "AppIcon-MagnifyingGlass",
+        "AppIcon-Map",
+        "AppIcon-Mushroom"
+    ]
+    
     var body: some View {
         List {
             // MARK: - Header
@@ -59,8 +70,41 @@ struct SettingsView: View {
             }
             .listRowSeparator(.hidden)
             
-            
             // MARK: - Icons
+            Section("Alternate Icons") {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 12) {
+                        ForEach(alternateAppIcons, id: \.self) { iconName in
+                            
+//                            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                                /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+//                            })
+                            
+                            Button {
+                                UIApplication.shared.setAlternateIconName(iconName) { error in
+                                    if let error {
+                                        print(error)
+                                    }
+                                }
+                            } label: {
+                                Image("\(iconName)-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                            }
+                        }
+                    }
+                }
+                .padding(.top, 12)
+                
+                Text("Choose your favorite app icon from the collection above.")
+                    .multilineTextAlignment(.center)
+                    .font(.footnote)
+                    .frame(maxWidth: .infinity)
+                    .foregroundStyle(.secondary)
+                    .padding(.bottom, 12)
+            }
             
             // MARK: - About
             Section(
