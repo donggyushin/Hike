@@ -48,19 +48,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		701091ED2BC2B5740005F6F0 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				701091EE2BC2B57F0005F6F0 /* CardView.swift */,
-				701091F02BC2B6710005F6F0 /* CustomBackgroundView.swift */,
-				701091F62BC2BD440005F6F0 /* CustomButtonView.swift */,
-				700C28D82BC681A100AA73B0 /* CustomCircleView.swift */,
-				70CB7B0C2BCA1E2D00E37B52 /* ListRowView.swift */,
-				700C28DA2BC6837700AA73B0 /* MotionAnimationView.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
 		701091F22BC2B89D0005F6F0 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,18 +60,63 @@
 			isa = PBXGroup;
 			children = (
 				70EB79ED2BC0FCB8001EB57A /* Assets.xcassets */,
+				70EB79EB2BC0FCB7001EB57A /* ContentView.swift */,
 				70EB79E92BC0FCB7001EB57A /* HikeApp.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		70CB7B082BCA185D00E37B52 /* Screen */ = {
+		70D554162BCA3032004C2FA1 /* Card */ = {
 			isa = PBXGroup;
 			children = (
-				70EB79EB2BC0FCB7001EB57A /* ContentView.swift */,
+				70D554192BCA3068004C2FA1 /* Components */,
+				70D554172BCA3051004C2FA1 /* Screen */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		70D554172BCA3051004C2FA1 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				701091EE2BC2B57F0005F6F0 /* CardView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		70D554192BCA3068004C2FA1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				701091F02BC2B6710005F6F0 /* CustomBackgroundView.swift */,
+				701091F62BC2BD440005F6F0 /* CustomButtonView.swift */,
+				700C28D82BC681A100AA73B0 /* CustomCircleView.swift */,
+				700C28DA2BC6837700AA73B0 /* MotionAnimationView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		70D5541A2BCA3095004C2FA1 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				70D5541C2BCA30A7004C2FA1 /* Components */,
+				70D5541B2BCA30A2004C2FA1 /* Screen */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		70D5541B2BCA30A2004C2FA1 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
 				70CB7B092BCA18C200E37B52 /* SettingsView.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		70D5541C2BCA30A7004C2FA1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70CB7B0C2BCA1E2D00E37B52 /* ListRowView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		70EB79DD2BC0FCB7001EB57A = {
@@ -106,10 +138,10 @@
 		70EB79E82BC0FCB7001EB57A /* Hike */ = {
 			isa = PBXGroup;
 			children = (
-				701091ED2BC2B5740005F6F0 /* Components */,
 				701091F32BC2B8AD0005F6F0 /* Main */,
 				70EB79EF2BC0FCB8001EB57A /* Preview Content */,
-				70CB7B082BCA185D00E37B52 /* Screen */,
+				70D554162BCA3032004C2FA1 /* Card */,
+				70D5541A2BCA3095004C2FA1 /* Setting */,
 				701091F22BC2B89D0005F6F0 /* Utility */,
 			);
 			path = Hike;
