@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MotionAnimationView: View {
     let size: CGFloat
-    @State private var randomCircleCount: Int = Int.random(in: 6...12)
+    @State private var randomCircleCount: Int = 6
     @State private var isAnimating: Bool = false
     
     var body: some View {

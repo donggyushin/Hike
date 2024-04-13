@@ -63,6 +63,29 @@ struct SettingsView: View {
             // MARK: - Icons
             
             // MARK: - About
+            Section(
+                header: Text("ABOUT THE APP"),
+                footer: HStack {
+                    Spacer()
+                    Text("Copyright © All right reserved.")
+                    Spacer()
+                }
+                    .padding(.vertical, 8)
+            ) {
+                ListRowView(label: "Application", value: "Hike", icon: .init(systemName: "apps.iphone", backgroundColor: .blue))
+                
+                ListRowView(label: "Compatability", value: "iOS, iPadOS", icon: .init(systemName: "info.circle", backgroundColor: .red))
+                
+                ListRowView(label: "Technology", value: "Swift", icon: .init(systemName: "swift", backgroundColor: .orange))
+                
+                ListRowView(label: "Version", value: "1.0", icon: .init(systemName: "gear", backgroundColor: .purple))
+                
+                ListRowView(label: "Developer", value: "DG", icon: .init(systemName: "ellipsis.curlybraces", backgroundColor: .mint))
+                
+                ListRowView(label: "Designer", value: "DG", icon: .init(systemName: "paintpalette", backgroundColor: .pink))
+                
+                ListRowView(label: "Website", value: "github", icon: .init(systemName: "globe", backgroundColor: .indigo), linkDestination: "https://github.com/donggyushin")
+            }
         }
     }
 }
